@@ -22,6 +22,11 @@ Here's a walkthrough of implemented user stories:
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
+## Images
+<img src='http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/397/930/datas/gallery.jpg' width='280'/>
+<img src='http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/397/932/datas/gallery.jpg' width='280'/>
+<img src='http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/397/931/datas/gallery.jpg' width='280'/>
+
 ## Contributors
 
 <a href="https://github.com/katsoohoo">Katherine Soohoo</a>, <a href="https://github.com/madelynw">Madelyn Wang</a>, Shivani Bhatt, Samanvitha Basole
