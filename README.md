@@ -8,8 +8,33 @@ Time spent: 7 hours spent in total.
 
 * [x] User can **search for a user** from the YouTube API and their recent videos will be displayed.
 * [x] User can **click on and watch videos**.
-* [ ] User can **customize** of the video page. 
-   * [x] User can configure play, pause icons of video.
+* [x] User can **customize** of the video page. 
+   * [x] User can configure play and pause icons of video.
+   * [x] User can configure status bar of video.
    * [ ] User can configure animations.
    * [ ] User can configure background of video page.
 
+## Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+<img src='http://i.imgur.com/JhbpsLx.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
+
+
+## License
+
+    Copyright [2016] [Katherine Soohoo, Madelyn Wang, Shivani Bhatt, Samanvitha Basole]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
