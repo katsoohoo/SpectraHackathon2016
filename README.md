@@ -7,5 +7,5 @@ Time spent: 7 hours spent in total.
 ## User Stories
 
 * [x] User can **search for a user** from the YouTube API and their recent videos will be displayed.
-* [x] User can click on and watch videos.
-* [ ] User can customize the background, animations, icons, and font of the video page. 
+* [x] User can **click on and watch videos**.
+* [ ] User can **customize the background, animations, icons, and font** of the video page. 
