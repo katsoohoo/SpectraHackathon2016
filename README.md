@@ -25,7 +25,7 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## License
 
-    Copyright [2016] [Katherine Soohoo, Madelyn Wang, Shivani Bhatt, Samanvitha Basole]
+    Copyright [2016] [<a href="https://github.com/katsoohoo>Katherine Soohoo</a>, <a href="https://github.com/madelynw>Madelyn Wang</a>, Shivani Bhatt, Samanvitha Basole]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
