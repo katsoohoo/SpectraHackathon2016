@@ -1,7 +1,8 @@
 html {
     background: #ffffff;
     background-image: url(http://i.imgur.com/ji7Fkq8.jpg);
-    background-size: cover;
+    background-repeat: cover;
+    background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -13,7 +14,7 @@ body {
 }
 
 #welcome {
-    font-size:28px;
+    font-size: 40px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 500;
     color: whitesmoke;
@@ -42,6 +43,7 @@ input[type=text] {
     font-style: italic;
     border-bottom: 1px dotted #ffffff;
     height: 30px;
+    text-align: center;
 }
 
 input[type=text]:focus {
