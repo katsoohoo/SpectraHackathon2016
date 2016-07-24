@@ -89,6 +89,10 @@ function custom() {
     $('#maincolor').on("change", function(e) {
         var myColor = '#' + document.getElementById("maincolor").value;
         document.querySelector(".video-js").style.color = myColor;
+    });
+    $('#barcolor').on("change", function(e) {
+        var myColor = '#' + document.getElementById("barcolor").value;
+        document.querySelector(".vjs-control-bar").style.backgroundColor = myColor;
     })
 }
 
