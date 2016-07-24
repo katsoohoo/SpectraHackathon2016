@@ -1,293 +1,37 @@
-html {
-    background: #ffffff;
-    background-image: #ffffff/* youtube is f1f1f1 linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%)*/;
-    -webkit-font-smoothing: antialiased;
-}
-
 body {
     background: #ffffff;
-    color: #363636;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
+    background-image: url(http://i.imgur.com/ji7Fkq8.jpg);
+    background-repeat: cover;
+    background-attachment: fixed;
+    -webkit-font-smoothing: antialiased;
     margin: 0 auto;
-    max-width: 80%;
     padding: 2em 2em 4em;
-}
-
-#left {
-    width: 65%;
-    float: left;
-    margin-top: 20px;
-}
-
-#right {
-    margin-left: 67%;
-    background-color: #ffeae5;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 0.5em 0.5em 0.5em;
+
 }
 
-#description {
-    background-color: #ffeae5;
-    font-size: 16px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    padding: 0.5em 0.5em 0.5em;
+#container {
+  color: whitesmoke;
 }
 
-#summary {
-    background-color: #ffeae5;
-    font-size: 14px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    padding: 0.5em 0.5em 0.5em;
+#vidinfo {
+    margin: 2em 0;
+    width: 640px;
 }
 
-#videos {
-    background-color: #ffeae5;
-    font-size:10px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: bold;
-    padding: 0.5em 0.5em 0.5em;
+#title {
+    background-color: rgba(255,255,255,0.2);
+    padding: 1em 1em;
+    font-size: 1em;
 }
 
-#text {
-    font-size:12px;
-    background-color: #ffeae5;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+#desc {
+    background-color: rgba(255,255,255,0.2);
+    padding: 1em 1em; 
+    font-size: 0.7em;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #222;
-    font-weight: 600;
-    line-height: 1.3;
+#customize {
+    background-color: rgba(0,0,0,0.7);
+    padding: 1em 1em; 
 }
-
-h2 {
-    margin-top: 1.3em;
-}
-
-a {
-    color: #0083e8;
-}
-
-b, strong {
-    font-weight: 600;
-}
-
-samp {
-    display: none;
-}
-
-img {
-    -webkit-animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-            animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
-    background: transparent;
-    margin-right: 12px;
-    margin-left: 3px;
-    display: inline;
-    max-width: 95%;
-}
-
-/* reset our lists to remove bullet points and padding */
-.mainmenu, .submenu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* make ALL links (main and submenu) have padding and background color */
-.mainmenu a {
-  display: block;
-  background-color: #CCC;
-  text-decoration: none;
-  padding: 10px;
-  color: #000;
-}
-
-/* add hover behaviour */
-.mainmenu a:hover {
-    background-color: #C5C5C5;
-}
-
-
-/* when hovering over a .mainmenu item,
-  display the submenu inside it.
-  we're changing the submenu's max-height from 0 to 200px;
-*/
-
-.mainmenu li:hover .submenu {
-  display: block;
-  max-height: 200px;
-}
-
-/*
-  we now overwrite the background-color for .submenu links only.
-  CSS reads down the page, so code at the bottom will overwrite the code at the top.
-*/
-
-.submenu a {
-  background-color: #999;
-}
-
-/* hover behaviour for links inside .submenu */
-.submenu a:hover {
-  background-color: #666;
-}
-
-/* this is the initial state of all submenus.
-  we set it to max-height: 0, and hide the overflowed content.
-*/
-.submenu {
-  overflow: hidden;
-  max-height: 0;
-  -webkit-transition: all 0.5s ease-out;
-}
-
-
-@-webkit-keyframes colorize {
-    0% {
-        -webkit-filter: grayscale(100%);
-    }
-    100% {
-        -webkit-filter: grayscale(0%);
-    }
-}
-
-@keyframes colorize {
-    0% {
-        filter: grayscale(100%);
-    }
-    100% {
-        filter: grayscale(0%);
-    }
-}
-
-
-
-
-/*
-  Player Skin Designer for Video.js
-  http://videojs.com
-
-  To customize the player skin edit 
-  the CSS below. Click "details" 
-  below to add comments or questions.
-  This file uses some SCSS. Learn more  
-  at http://sass-lang.com/guide)
-
-  This designer can be linked to at:
-  http://codepen.io/heff/pen/EarCt/left/?editors=010
-*/
-
-// The following are SCSS variables to automate some of the values.
-// But dont feel limited by them. Change/replace whatever you want. 
-
-// The color of icons, text, and the big play button border.
-// Try changing to #0f0
-$primary-foreground-color: #000; // #fff default
-
-// The default color of control backgrounds is mostly black but with a little
-// bit of blue so it can still be seen on all-black video frames, which are common.
-// Try changing to #900
-$primary-background-color: #2B333F;  // #2B333F default
-
-// Try changing to true
-$center-big-play-button: false; // true default
-
-.video-js {
-  /* The base font size controls the size of everything, not just text.
-     All dimensions use em-based sizes so that the scale along with the font size.
-     Try increasing it to 15px and see what happens. */
-  font-size: 10px;
-
-  /* The main font color changes the ICON COLORS as well as the text */
-  color: $primary-foreground-color;
-}
-
-/* The "Big Play Button" is the play button that shows before the video plays.
-   To center it set the align values to center and middle. The typical location
-   of the button is the center, but there is trend towards moving it to a corner
-   where it gets out of the way of valuable content in the poster image.*/
-.vjs-default-skin .vjs-big-play-button {
-  /* The font size is what makes the big play button...big. 
-     All width/height values use ems, which are a multiple of the font size.
-     If the .video-js font-size is 10px, then 3em equals 30px.*/
-  font-size: 3em;
-
-  /* We're using SCSS vars here because the values are used in multiple places.
-     Now that font size is set, the following em values will be a multiple of the
-     new font size. If the font-size is 3em (30px), then setting any of
-     the following values to 3em would equal 30px. 3 * font-size. */
-  $big-play-width: 3em; 
-  /* 1.5em = 45px default */
-  $big-play-height: 1.5em;
-
-  line-height: $big-play-height;
-  height: $big-play-height;
-  width: $big-play-width;
-
-  /* 0.06666em = 2px default */
-  border: 0.06666em solid $primary-foreground-color;
-  /* 0.3em = 9px default */
-  border-radius: 0.3em;
-
-  @if $center-big-play-button {
-    /* Align center */
-    left: 50%;
-    top: 50%;
-    margin-left: -($big-play-width / 2);
-    margin-top: -($big-play-height / 2);   
-  } @else {
-    /* Align top left. 0.5em = 15px default */
-    left: 0.5em;
-    top: 0.5em;
-  }
-}
-
-/* The default color of control backgrounds is mostly black but with a little
-   bit of blue so it can still be seen on all-black video frames, which are common. */
-.video-js .vjs-control-bar,
-.video-js .vjs-big-play-button,
-.video-js .vjs-menu-button .vjs-menu-content {
-  /* IE8 - has no alpha support */
-  background-color: $primary-background-color;
-  /* Opacity: 1.0 = 100%, 0.0 = 0% */
-  background-color: rgba($primary-background-color, 0.7);
-}
-
-// Make a slightly lighter version of the main background
-// for the slider background.
-$slider-bg-color: lighten($primary-background-color, 33%);
-
-/* Slider - used for Volume bar and Progress bar */
-.video-js .vjs-slider {
-  background-color: $slider-bg-color;
-  background-color: rgba($slider-bg-color, 0.5);
-}
-
-/* The slider bar color is used for the progress bar and the volume bar
-   (the first two can be removed after a fix that's coming) */
-.video-js .vjs-volume-level,
-.video-js .vjs-play-progress,
-.video-js .vjs-slider-bar {
-  background: $primary-foreground-color;
-}
-
-/* The main progress bar also has a bar that shows how much has been loaded. */
-.video-js .vjs-load-progress {
-  /* For IE8 we'll lighten the color */
-  background: ligthen($slider-bg-color, 25%);
-  /* Otherwise we'll rely on stacked opacities */
-  background: rgba($slider-bg-color, 0.5);
-}
-
-/* The load progress bar also has internal divs that represent
-   smaller disconnected loaded time ranges */
-.video-js .vjs-load-progress div {
-  /* For IE8 we'll lighten the color */
-  background: ligthen($slider-bg-color, 50%);
-  /* Otherwise we'll rely on stacked opacities */
-  background: rgba($slider-bg-color, 0.75);
-}
-
