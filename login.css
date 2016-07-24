@@ -1,0 +1,101 @@
+html {
+    background: #ffffff;
+    background-image: url(http://www.pixelstalk.net/wp-content/uploads/2016/04/Stars-wallpapers-HD-backgrounds-download.jpg);
+    background-size: cover;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background: none;
+    color: whitesmoke;
+    margin: 0 auto;
+    padding: 2em 2em 4em;
+}
+
+#welcome {
+    font-size:28px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    color: whitesmoke;
+    padding: 6px;
+    text-align: center;
+    margin-top: 23%
+}
+
+#enterName {
+    background: none;
+    font-size:24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+input[type=text] {
+    background-color:rgba(0, 0, 0, 0);
+    color: whitesmoke;
+    outline: none;
+    font-size:21px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    border: none;
+    font-style: italic;
+    border-bottom: 1px dotted #ffffff;
+    height: 30px;
+}
+
+input[type=text]:focus {
+    outline: none;
+    color: whitesmoke;
+}
+
+input[type=submit] {
+    padding:5px 15px; 
+    color:rgba(0,0,0,0.5);
+    background: rgba(50,0,120,0.2);
+    font-weight: bold;
+    border:0 none;
+    color: whitesmoke;
+    font-size: 14px;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+}
+
+::-webkit-input-placeholder {
+   color: whitesmoke;
+    opacity: 0.9;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: whitesmoke;  
+    opacity: 0.9;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: whitesmoke;
+    opacity: 0.9;
+}
+
+:-ms-input-placeholder {  
+   color: whitesmoke;  
+    opacity: 0.9;
+}
+
+@-webkit-keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+    }
+}
+
+@keyframes colorize {
+    0% {
+        filter: grayscale(100%);
+    }
+    100% {
+        filter: grayscale(0%);
+    }
+}
