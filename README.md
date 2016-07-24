@@ -1,6 +1,6 @@
 # YouArt
 
-YouArt allows users to customize their video pages (play button, background image). The app utilizes the YouTube API to search for users' videos.
+YouArt allows users to customize their video pages (play button, video status bar, background image). The app utilizes the YouTube API to search for users' videos. This web app was created for Spectra Hackathon and utilizes HTML5, CSS, Javascript, JQuery, Bootstrap, and AJAX.
 
 Time spent: 7 hours spent in total. 
 
