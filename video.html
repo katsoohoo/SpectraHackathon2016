@@ -1,151 +1,77 @@
 <!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>YouTube Art</title>
-        <meta name="description" content="YouTube for you!">
-        <link rel="stylesheet" href="video.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="YouTube for you!">
+
+    <title>Youtube Art</title>  
     
-        <script src="http://vjs.zencdn.net/5.10.7/video.js"></script>
+    <!-- CSS -->
+    <link href="http://vjs.zencdn.net/5.10.7/video-js.css" rel="stylesheet">
+    <link href="video.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-        <link href="http://vjs.zencdn.net/5.10.7/video-js.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="http://vjs.zencdn.net/5.10.7/video.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.1.0/Youtube.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
+</head>
 
-        <!-- If you'd like to support IE8 -->
-        <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-    
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.1.0/Youtube.min.js"></script>
-    
-    </head>
 
-    <body>
-        
-        <!--
-        <a href="https://www.youtube.com">YouTube<img src="https://www.youtube.com/yt/brand/media/image/YouTube-logo-full_color.png" alt="YouTube" height="50" align="left"></a>-->
-        <!--<h1>YouTube Art</h1>-->
-        
-        <!--
-        <nav>
-            <ul>
-                <li><a href="https://www.youtube.com">YouTube</a></li>
-            </ul>
-        </nav>
--->
-        <div id="container">
-            <div id="left">
-                
-    
-                <video id="my-video" class="video-js" controls preload="auto" width="749" height="440" poster="MY_VIDEO_POSTER.jpg" data-setup='{"autoplay": false, "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'>
-                    <p class="vjs-no-js">
-                      To view this video please enable JavaScript, and consider upgrading to a web browser that
-                      <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
-                    </p>
-                  </video>
-                
-                <!--
-                <script>
-                    
-                videojs("example_video_1", {}, function(){
-                    // Player (this) is initialized and ready.
-                });
-                    
-                var myPlayer = videojs('example_video_1');
-                    
-                videojs("example_video_1").ready(function(){
-                    var myPlayer = this;
-                    // EXAMPLE: Start playing the video.
-                    myPlayer.play();
-                });    
-                
-                </script>
-                -->
-                
-                <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-                <div id="player"></div>
+<body>
+    <div id="container">
+        <div class="row">
+          <div class="col-md-7">
+                          <!-- Display Video -->
+            <div id="video"></div>
 
-                <script>
-                  // 2. This code loads the IFrame Player API code asynchronously.
-                  var tag = document.createElement('script');
-
-                  tag.src = "https://www.youtube.com/iframe_api";
-                  var firstScriptTag = document.getElementsByTagName('script')[0];
-                  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-                  // 3. This function creates an <iframe> (and YouTube player)
-                  //    after the API code downloads.
-                  var player;
-                  function onYouTubeIframeAPIReady() {
-                    player = new YT.Player('player', {
-                      height: '440',
-                      width: '749',
-                      videoId: 'VZ5XYP5tZ_Q',
-                      events: {
-                        'onReady': onPlayerReady,
-                        'onStateChange': onPlayerStateChange
-                      }
-                    });
-                  }
-
-                  // 4. The API will call this function when the video player is ready.
-                  function onPlayerReady(event) {
-                    event.target.playVideo();
-                  }
-
-                  // 5. The API calls this function when the player's state changes.
-                  //    The function indicates that when playing a video (state=1),
-                  //    the player should play for six seconds and then stop.
-                  var done = false;
-                  function onPlayerStateChange(event) {
-                    if (event.data == YT.PlayerState.PLAYING && !done) {
-                      setTimeout(stopVideo, 2000);
-                      done = true;
-                    }
-                  }
-                  function stopVideo() {
-                    player.stopVideo();
-                  }
-                </script>
-                
-                <div id="description">
-                    <img src="https://yt3.ggpht.com/-W3NLcy2ZbAU/AAAAAAAAAAI/AAAAAAAAAAA/gahwVP4gAE8/s88-c-k-no-rj-c0xffffff/photo.jpg" style="float: left;" width="10%" height="10%" >
-                    APNEA - sped up painting
-                    <br>
-                    <div id="text">agnescecile</div>
-                    <br><br>
-                </div>
-                
-                <p></p> <!-- because i don't know how to do spacing -->
-                
-                <div id="summary">
-                    <b>Published on Oct 13, 2014</b>
-                    <br>
-                    acrylic, watercolor and pencil on canvas<br>100 cm x 150 cm<br>time: around 15 hours
-                </div>
-                
+            <!-- Video info -->
+            <div id="vidinfo">
+                <div id="title"></div>
                 <p></p>
-                
-                <div id="summary">
-                    <b>COMMENTS</b>
-                </div>
-                
-                <p></p> <!-- spacing -->
-        
+                <div id="desc"></div>
             </div>
-            <div id="right">
-                <b>Up next</b>
-                
-                <div>
-                
-                <div id="videos">
-                    <ul class="mainmenu">
-                        <li><img src="https://s3-eu-west-1.amazonaws.com/bowwowtimes-new/wp-content/uploads/2015/07/cee522742f8b91423a633c4bfa1fe6d8.jpg" width="30%" height="30%" style="float: left;"><br><br>Next Video 1<br><br><br><br><br><br></li>
-                        <br>
-                        <li><img src="https://s3-eu-west-1.amazonaws.com/bowwowtimes-new/wp-content/uploads/2015/07/cee522742f8b91423a633c4bfa1fe6d8.jpg" width="30%" height="30%" style="float: left;"><br><br>Next Video 2<br><br><br><br><br><br></li>
-                    </ul>
-                </div>
             </div>
-            <div class="clear"></div>
-        
-    </body>
+          <div class="col-md-5">
+            <div id="customize">
+              <h1>Customize Me!</h1>
+              </div>
+            </div>
+        </div>
+<!--
+        <div id="left">
+
+
+            <p></p>  spacing 
+
+        </div>
+        <div id="right">
+            hi
+        </div>
+-->
+<!--
+        <div id="right">
+            <b>Up next</b>
+
+            <div>
+
+            <div id="videos">
+                <ul class="mainmenu">
+                    <li><img src="https://s3-eu-west-1.amazonaws.com/bowwowtimes-new/wp-content/uploads/2015/07/cee522742f8b91423a633c4bfa1fe6d8.jpg" width="30%" height="30%" style="float: left;"><br><br>Next Video 1<br><br><br><br><br><br><br><br><br></li>
+                    <br>
+                    <li><img src="https://s3-eu-west-1.amazonaws.com/bowwowtimes-new/wp-content/uploads/2015/07/cee522742f8b91423a633c4bfa1fe6d8.jpg" width="30%" height="30%" style="float: left;"><br><br>Next Video 2<br><br><br><br><br><br><br><br></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+-->
+    </div>
+
+</body>
 
 </html>
