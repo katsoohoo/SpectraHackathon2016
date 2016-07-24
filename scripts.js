@@ -7,7 +7,7 @@ $(document).ready(function()  {
     var vid = location.search.split('vid=')[1];
     customizeVid(vid);
     //setVideoInfo('x9v8aNl6Aps');
-
+    custom();
 });
 
 //Get video List from channel
@@ -83,6 +83,13 @@ function customizeVid(pid) {
     $('#video').html(code);
     // set video info
     getVidInfo(pid);
+}
+
+function custom() {
+    $('#maincolor').on("change", function(e) {
+        var myColor = '#' + document.getElementById("maincolor").value;
+        document.querySelector(".video-js").style.color = myColor;
+    })
 }
 
 
