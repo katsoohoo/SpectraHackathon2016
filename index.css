@@ -1,6 +1,6 @@
 html {
     background: #ffffff;
-    background-image: url(http://i.imgur.com/ji7Fkq8.jpg);
+    background-image: url(https://i.imgur.com/ji7Fkq8.jpg);
     background-repeat: cover;
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
@@ -52,7 +52,7 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-    padding:5px 15px; 
+    padding:5px 15px;
     color:rgba(0,0,0,0.5);
     background: rgba(0,0,0,0.2);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -62,7 +62,7 @@ input[type=submit] {
     font-size: 14px;
     cursor:pointer;
     -webkit-border-radius: 5px;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
 
 ::-webkit-input-placeholder {
@@ -71,7 +71,7 @@ input[type=submit] {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: whitesmoke;  
+   color: whitesmoke;
     opacity: 0.9;
 }
 
@@ -80,8 +80,8 @@ input[type=submit] {
     opacity: 0.9;
 }
 
-:-ms-input-placeholder {  
-   color: whitesmoke;  
+:-ms-input-placeholder {
+   color: whitesmoke;
     opacity: 0.9;
 }
 

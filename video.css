@@ -1,6 +1,6 @@
 body {
     background: #ffffff;
-    background-image: url(http://i.imgur.com/ji7Fkq8.jpg);
+    background-image: url(https://i.imgur.com/ji7Fkq8.jpg);
     background-repeat: cover;
     background-attachment: fixed;
     -webkit-font-smoothing: antialiased;
@@ -27,11 +27,11 @@ body {
 
 #desc {
     background-color: rgba(255,255,255,0.2);
-    padding: 1em 1em; 
+    padding: 1em 1em;
     font-size: 0.7em;
 }
 
 #customize {
     background-color: rgba(0,0,0,0.7);
-    padding: 1em 1em; 
+    padding: 1em 1em;
 }
