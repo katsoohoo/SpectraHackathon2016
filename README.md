@@ -4,6 +4,8 @@ YouArt allows users to customize their video pages (play button, video status ba
 
 Time spent: 7 hours spent in total. 
 
+### [Live Preview](https://katsoohoo.github.io/SpectraHackathon2016/)
+
 ## User Stories
 
 * [x] User can **search for a user** from the YouTube API and their recent videos will be displayed.
